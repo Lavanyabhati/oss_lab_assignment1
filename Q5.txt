@@ -1,0 +1,39 @@
+The basic structure of the calculator project involves HTML for structure and content, CSS for styling, and JavaScript for functionality. Here’s a summary of what each function in the provided JavaScript code does:
+
+JavaScript Function Summaries:
+getHistory():
+
+Retrieves the text content of the element with ID history-value, representing the historical operations or expressions.
+printHistory(num):
+
+Updates the text content of the element with ID history-value with the provided num, displaying the historical operations or expressions.
+getOutput():
+
+Retrieves the text content of the element with ID output-value, representing the current output or result of calculations.
+printOutput(num):
+
+Updates the text content of the element with ID output-value with the provided num. If num is not empty, formats it with commas for better readability using getFormattedNumber(num).
+getFormattedNumber(num):
+
+Formats the given num by converting it into a locale-specific string representation with commas for thousand separators. Handles special case for - to return an empty string.
+reverseNumberFormat(num):
+
+Converts a formatted number string num (with commas) back into a plain number by removing all commas using a regular expression.
+Event Listeners for Operators (operator):
+
+Iterates over all elements with the class operator (like +, -, *, /, =, clear, backspace).
+Handles different operator clicks: clears history and output, performs backspace functionality, evaluates expressions when = is clicked, and updates both history and output displays accordingly.
+Event Listeners for Numbers (number):
+
+Iterates over all elements with the class number.
+Concatenates the clicked number to the current output value, updating the output display.
+Basic Code Structure:
+HTML: Defines structure with elements for history and output display, operator buttons, and number buttons.
+
+CSS: Provides styles for layout, button appearance, and overall design.
+
+JavaScript: Manages the interactive behavior of the calculator:
+
+Defines functions (getHistory, printHistory, etc.) to interact with HTML elements.
+Sets up event listeners to respond to user interactions (clicks on numbers and operators).
+Handles logic for input processing, calculation, and updating display elements (history-value and output-value).
